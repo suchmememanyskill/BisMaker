@@ -61,6 +61,7 @@ namespace BisMaker
             Builder builder = new Builder(boot0, boot1, bcpkg2_1, bcpkg2_3);
             builder.Build("./user.bis", tb_embeddedversion.Text, ref pb_creation);
             lbl_status.Text = "Done!";
+            btn_generate_bis.Enabled = true;
         }
 
         private void btn_openboot1_Click(object sender, EventArgs e)
